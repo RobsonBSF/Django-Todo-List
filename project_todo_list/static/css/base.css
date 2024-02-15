@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    /* border: 2px solid black; */
+    width: 100vw;
+    height: 7vh;
+    background: rgba(27, 121, 209, 0.397);
+}
