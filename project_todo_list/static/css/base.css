@@ -1,11 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
-header {
-    /* border: 2px solid black; */
-    width: 100vw;
-    height: 7vh;
-    background: rgba(27, 121, 209, 0.397);
+body {
+    min-height: 100vh;
+    background: url("../img/background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ /* Header */
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 17px 90px;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+
+.Logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.Navbar {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background: red; */
+}
+
+.Navbar div {
+    /* background: rgb(90, 1, 1); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 25px;
+}
+
+.Navbar div a {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: .4s ease;
+}
+
+.Navbar div a:hover {
+    font-size: 20px;
+}
+
+/* Footer */
+.Footer {
+    padding: 15px 90px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background: rgb(1, 46, 66); */
+    position: absolute;
+    top: 100vh;
+}
+
+.Footer p {
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 772px) {
+    .Header {
+        flex-direction: column;
+        padding: 17px 50px;
+    }
+
+    .Navbar {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .Navbar div {
+        margin: 5px 0px;
+    }
 }
