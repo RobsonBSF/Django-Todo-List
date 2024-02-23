@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/container.css' %}">
+    <link rel="stylesheet" href="{% static 'css/lists.css' %}">
+    
+    <div class="Container">
+        <form class method="POST" action="/lists">
+            {% csrf_token %}
+            <input class="TaskField" type="text" name="title" id="id_title" placeholder="Enter task title">
+            <input class='TaskSubmit' type="submit" name="Create Task">
+        </form>
+
+        {% for task in tasks %}
+            <div class="ListItems">
+                {% if task.status == True %}
+                    <strike>{{task}}</strike>
+                {% else %}
+                    <span>{{task}}</span>
+                {% endif %}
+
+                <a class="Update" href="{% url 'update_task' task.id %}">Update</a>
+                <a class="Delete" href="{% url 'delete_task' task.id %}">Delete</a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}

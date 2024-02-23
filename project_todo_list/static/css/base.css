@@ -75,7 +75,7 @@ body {
     align-items: center;
     /* background: rgb(1, 46, 66); */
     position: absolute;
-    top: 100vh;
+    bottom: 0;
 }
 
 .Footer p {
@@ -96,5 +96,13 @@ body {
 
     .Navbar div {
         margin: 5px 0px;
+    }
+
+    .Footer {
+        justify-content: center;
+    }
+
+    .Footer p {
+        font-size: 10px;
     }
 }

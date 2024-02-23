@@ -1,0 +1,49 @@
+.Container {
+    min-height: 170px;
+}
+
+.DelMsg {
+    background: white;
+    padding: 5px;
+    min-height: 45px;
+    width: 240px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CancelDel {
+    background: rgb(0, 147, 170);
+    color: white;
+    height: 40px;
+    width: 240px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    transition: 0.2s ease;
+}
+
+.CancelDel:hover {
+    background: rgb(0, 93, 107);
+}
+
+.ConfirmDel {
+    background: rgb(253, 87, 57);
+    color: white;
+    height: 40px;
+    width: 240px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.2s ease;
+}
+
+.ConfirmDel:hover {
+    background: rgb(190, 65, 42);
+}

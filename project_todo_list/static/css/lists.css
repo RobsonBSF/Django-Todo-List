@@ -1,0 +1,68 @@
+.Container form {
+    margin-bottom: 20px;
+}
+
+.TaskField {
+    height: 40px;
+    width: 170px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.TaskSubmit {
+    height: 40px;
+    width: 70px;
+    color: white;
+    background: rgb(0, 147, 170);
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.TaskSubmit:hover {
+    background: rgb(0, 106, 122);
+}
+
+.ListItems {
+    min-height: 40px;
+    width: 240px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: rgb(255, 255, 255);
+}
+
+.ListItems strike, .ListItems span {
+    width: 100px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.ListItems a {
+    padding: 4px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    /* background: red; */
+}
+
+.Update {
+    background: rgb(0, 134, 155);
+    transition: 0.2s ease;
+}
+
+.Update:hover {
+    background: rgb(0, 93, 107);
+}
+
+.Delete {
+    background: rgb(253, 87, 57);
+    transition: 0.2s ease;
+}
+
+.Delete:hover {
+    background: rgb(190, 65, 42);
+}
