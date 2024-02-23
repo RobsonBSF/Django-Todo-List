@@ -1,4 +1,7 @@
 # Django-Todo-List
+
+OBS: esse projeto ainda está em desenvolvimento e algumas funcionalidades ainda não foram implementadas...
+
 O django-todo-list é uma aplicação web de Lista de Tarefas construída com o framework Django. Permite aos usuários criar, visualizar, editar e excluir tarefas, ajudando a organizar suas atividades diárias de forma eficiente.
 
 ## Funcionalidades
