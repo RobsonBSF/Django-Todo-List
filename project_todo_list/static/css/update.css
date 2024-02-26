@@ -36,6 +36,10 @@ form {
     gap: 5px;
 }
 
+.CheckboxDiv input:hover {
+    cursor: pointer;
+}
+
 .UpdateTask {
     background: rgb(0, 147, 170);
     color: white;
@@ -49,4 +53,5 @@ form {
 
 .UpdateTask:hover {
     background: rgb(0, 106, 122);
+    cursor: pointer;
 }

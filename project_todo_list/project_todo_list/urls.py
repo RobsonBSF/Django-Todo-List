@@ -21,7 +21,9 @@ from app_todo_list import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+    path('login', views.login, name='login'),
+    path('register', views.register, name='register'),
     path('lists', views.lists, name='lists'),
     path('update/<str:pk>', views.updateTask, name='update_task'),
-    path('delete/<str:pk>', views.deleteTask, name='delete_task')
+    path('delete/<str:pk>', views.deleteTask, name='delete_task'),
 ]

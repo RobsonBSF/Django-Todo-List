@@ -22,6 +22,7 @@
 
 .TaskSubmit:hover {
     background: rgb(0, 106, 122);
+    cursor: pointer;
 }
 
 .ListItems {
@@ -56,6 +57,7 @@
 
 .Update:hover {
     background: rgb(0, 93, 107);
+    cursor: pointer;
 }
 
 .Delete {
@@ -65,4 +67,5 @@
 
 .Delete:hover {
     background: rgb(190, 65, 42);
+    cursor: pointer;
 }

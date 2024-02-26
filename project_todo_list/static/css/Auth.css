@@ -1,0 +1,98 @@
+.AuthCard {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.801);
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.AuthTitle {
+    color: rgb(0, 78, 90);
+    margin-bottom: 10px;
+}
+
+.TextField {
+    display: flex;
+    flex-direction: column;
+}
+
+.Input {
+    background: none;
+    width: 210px;
+    height: 30px;
+    font-size: 15px;
+    outline: none;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.418);
+    transition: 0.3s ease;
+}
+
+.Label {
+    position: relative;
+    color: rgba(0, 0, 0, 0.356);
+    left: 10px;
+    top: -27px;
+    z-index: -1;
+    transition: 0.3s ease;
+}
+
+.Input:focus {
+    border-bottom: 2px solid rgb(0, 147, 170);
+}
+
+.Input:focus ~ .Label {
+    color: rgb(0, 147, 170);
+    margin-bottom: 0px;
+    transform: translateY(-21px);
+}
+
+.Input:valid {
+    border-bottom: 2px solid rgb(0, 172, 120);
+}
+
+.Input:valid ~ .Label {
+    color: rgb(0, 172, 120);
+    margin-bottom: 0px;
+    transform: translateY(-21px);
+}
+
+.SubmitBtn {
+    background: rgb(0, 147, 170);
+    color: white;
+    height: 30px;
+    width: 210px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.SubmitBtn:hover {
+    background: rgb(0, 106, 122);
+    cursor: pointer;
+}
+
+.LoginCard p {
+    color: rgba(48, 48, 48, 0.87);
+}
+
+.LoginCard a {
+    color: rgb(0, 106, 122);
+    text-decoration: none;
+}
+
+.AuthCard p {
+    color: rgb(0, 78, 90);
+}
+
+.AuthCard a {
+    color: rgb(0, 147, 170);
+    text-decoration: none;
+}

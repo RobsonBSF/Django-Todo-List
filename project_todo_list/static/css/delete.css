@@ -30,6 +30,7 @@
 
 .CancelDel:hover {
     background: rgb(0, 93, 107);
+    cursor: pointer;
 }
 
 .ConfirmDel {
@@ -46,4 +47,5 @@
 
 .ConfirmDel:hover {
     background: rgb(190, 65, 42);
+    cursor: pointer;
 }

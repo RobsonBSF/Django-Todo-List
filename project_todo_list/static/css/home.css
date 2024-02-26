@@ -1,0 +1,29 @@
+.HomeSection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.925);
+}
+
+.HomeTitle {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.HomeP {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+@media (max-width: 401px) {
+    .HomeP {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 341px) {
+    .HomeTitle {
+        font-size: 35px;
+    }
+}
