@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{% static 'css/lists.css' %}">
     
     <div class="Container">
-        <form class method="POST" action="/lists">
+        <form class method="POST" action="/lists/">
             {% csrf_token %}
             <input class="TaskField" type="text" name="title" id="id_title" placeholder="Enter task title">
             <input class='TaskSubmit' type="submit" name="Create Task">

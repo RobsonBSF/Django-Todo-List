@@ -4,8 +4,14 @@
 {% block content %}
     <link rel="stylesheet" href="{% static "css/Auth.css" %}">
 
-    <form class="AuthCard" method="POST" action=""> <!-- mudar "action" depois -->
-        <h1 class="AuthTitle">Login</h1>
+    <form class="AuthCard" method="POST" action="{% url "register" %}">
+        {% csrf_token %}
+        <h1 class="AuthTitle">Register</h1>
+
+        <div class="TextField">
+            <input type="text" class="Input" name="username" required>
+            <label for="username" class="Label">Username</label>
+        </div>
 
         <div class="TextField">
             <input type="email" class="Input" name="email" required>
@@ -17,13 +23,8 @@
             <label for="password" class="Label" >password</label>
         </div>
 
-        <div class="TextField">
-            <input type="password" class="Input" name="confirm-password" required>
-            <label for="confirm-password" class="Label" >confirm password</label>
-        </div>
-
         <input class="SubmitBtn" type="submit" value="Sign-up">
 
-        <p>already a member? <a href="login">Sign-in</a></p>
+        <p>already a member? <a href="{% url "login" %}">Sign-in</a></p>
     </form>
 {% endblock content %}
